@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/greyfeathers-assignment/static/css/main.a1ee7431.css",
+    "main.js": "/greyfeathers-assignment/static/js/main.083bd89e.js",
+    "static/js/787.660a472f.chunk.js": "/greyfeathers-assignment/static/js/787.660a472f.chunk.js",
+    "static/media/filter.svg": "/greyfeathers-assignment/static/media/filter.de3131c174fc5138f3aed0799da17ab8.svg",
+    "static/media/calendar.svg": "/greyfeathers-assignment/static/media/calendar.0ea63d63bdad5703f7f17a54e53a0953.svg",
+    "static/media/notification.svg": "/greyfeathers-assignment/static/media/notification.839828a386a1aa859f837b0d258eb70e.svg",
+    "index.html": "/greyfeathers-assignment/index.html",
+    "static/media/openNewTab.svg": "/greyfeathers-assignment/static/media/openNewTab.7eeda57043cfdc8871d445cbe59df446.svg",
+    "static/media/user.svg": "/greyfeathers-assignment/static/media/user.dd8c1b813e587d76b797a35e423f1d36.svg",
+    "static/media/search.svg": "/greyfeathers-assignment/static/media/search.06e310dbfbf3ab21da478aef6c037c14.svg",
+    "static/media/downArrow.svg": "/greyfeathers-assignment/static/media/downArrow.373dd99974b3d90d1dd3efe82e8edc2d.svg",
+    "main.a1ee7431.css.map": "/greyfeathers-assignment/static/css/main.a1ee7431.css.map",
+    "main.083bd89e.js.map": "/greyfeathers-assignment/static/js/main.083bd89e.js.map",
+    "787.660a472f.chunk.js.map": "/greyfeathers-assignment/static/js/787.660a472f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1ee7431.css",
+    "static/js/main.083bd89e.js"
+  ]
+}
