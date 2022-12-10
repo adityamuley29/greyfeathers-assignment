@@ -1,38 +1,344 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+.container{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 100vw; */
+  height: 94vh;
+  padding: 20px 20px;
+  background-color: #EEEEEE;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.leftSection{
+  position: relative;
+  width: 12%;
+  height: 100%;
+  padding: 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  background-color: white;
+}
+.rightSection{
+  position: relative;
+  height: 100%;
+  width: 84%;
+  padding: 10px 10px;
+
+
+}
+.buttonList{
+  position: relative;
+  top: 6.5vh;
+}
+
+.navigationButton{
+  position: relative;
+  width: 10vw;
+  height: 4vh;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   color: white;
+  align-items: center;
+  padding: 5px 8px;
+  background-color: #E84545;
+  margin: 10px 0px;
+
+
+}
+.rightSearchContainer{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 5px; */
+  align-items: center;
+  height: 5vh;
+}
+.rightSearchBar{
+position: relative;
+background-color: white;
+width: 80%;
+height: 6vh;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 0px 10px;
+border-radius: 5px;
+}
+.seachTextArea{
+  position: relative;
+  width: 95%;
+  height: 90%;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  margin-left: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon{
+  width: 20px;
+}
+.rightButtons{
+  position: relative;
+  display: flex;
+  width: 10vw;
+  height: 5vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.notificationButton,.userProfileButton{
+background-color: white;
+height: 5vh;
+width: 5vh;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rightMainContainer{
+  position: relative;
+  background-color: white;
+  height: 87%;
+  border: 2px solid;
+  padding: 20px 10px;
+  top: 20px;
+  border: none;
 }
+.mainContainerHeading{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+#mainSearchBar{
+  border: 1px solid lightgray;
+  height: 5vh;
+  top: 10px;
+}
+.mainContainerOptions{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  top: 2vh;
+}
+.rightOptions{
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 5vh;
+  width: 20vw;
+}
+.filterOption,.currentDayOption{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 5vw;
+  padding: 0px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.currentDayOption{
+  width: 8vw;
+
+}
+
+.currentDayBox{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+#mainSearchBar{
+  top: 0;
+  width: 70%;
+}
+.downArrow{
+  width: 10px;
+}
+
+.tableContainer{
+  position: relative;
+  top: 5vh;
+  height: 69vh;
+  overflow: auto;
+}
+.tableContainer table{
+  position: relative;
+  width: 100%;
+  border: 1px solid lightgrey;
+  padding: 2px 5px;
+}
+.tableContainer table tbody{
+  height: 10vh;
+  overflow-y: auto;
+}
+.tableContainer table thead{
+  color: grey;
+  height: 6vh;
+  text-align: start;
+}
+th,td{
+  border-bottom: 1px solid lightgrey;
+  text-align: start;
+}
+tr{
+  height: 6vh;
+}
+
+.Delivery{
+  color:#E84545
+}
+.DineIn{
+  color: blue;
+}
+.TakeAway{
+  color: #FFE15D;
+}
+
+.unPiadPayment{
+  color: #EB1D36;
+  background-color: #FFF2F2;
+  border: 1px solid #EB1D36; 
+  border-radius: 5px;
+  height: 3.5vh;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.PaidPayment{
+  color: #21BF73;
+  background-color: #b0eacd64;
+  border-radius: 5px;
+  height: 4vh;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.newOrder{
+  color: #FF7000;
+  background-color: #ffdda966;
+  border-radius: 5px;
+  height: 3.5vh;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.orderUpdated{
+  color: #A555EC;
+  background-color: #f3ccff66;
+  border-radius: 5px;
+  height: 4vh;
+  width: 7.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.OpenNewTab{
+ width: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 28px;
+  /* height: 5vh; */
+}
+.downArrowTableHead{
+  width: 12px;
+  cursor: pointer;
+}
+
+.orderTypeHover{
+  position: absolute;
+  top: 6.5vh;
+  left: 27vw;
+  height: 10vh;
+  width: 10vw;
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  z-index: 100000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.orderTypeHover span input{
+  margin-right: 10px;
+}
+
+.orderStatusHover{
+  position: absolute;
+  top: 6.5vh;
+  left: 36vw;
+  height: 10vh;
+  width: 10vw;
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  z-index: 100000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.orderStatusHover span{
+  display: flex;
+}
+.orderStatusHover span input{
+  margin-right: 10px;
+}
+.filterHover{
+  position: absolute;
+  top: 15vh;
+  right: 8.5vw;
+  height: auto;
+  width: 10vw;
+  background-color: white;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  z-index: 100000;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.filterHover div{
+  margin-bottom: 10px;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+.filterHover div span{
+  display: flex;
+}
+.filterHover div span input{
+  margin-right: 10px;
+}
+
